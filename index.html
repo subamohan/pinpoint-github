@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>pinpoint application</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="pinstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    </head>
+  <body>
+    <!--first row for privacy page-->
+
+  <div class="row">
+    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12 widthsnd">
+
+        <div class="header" id="myHeader">
+            <nav class="navbar navbar-expand-sm  bg navbar-dark heiwid">
+     <!--logo -->
+              <a class="navbar-brand logopad" href="#">
+                <img id="logoid" src="logo.png" alt="logo" style="width:40px;">
+              </a>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link "href="#"><h5>Privacysettings</h5></a>
+                </li>
+              </ul>
+     <!--logoutbutton-->
+              <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+                <a class="btnlogout"</a><button style="color:white">logout<i class="fa fa-sign-out"></i></button>
+              </ul>
+            </nav>
+   <!--div for dropdown---->
+        <div >
+          <p>Who can see my personal info</p>
+            <hr></hr>
+              <div class="accordion" id="accordionExample">
+                <div class="card"><!--1st card-->
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              ProfilePicture
+                      </button>
+                    </h5>
+                  </div>
+
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                      <ul class="dropdownstyles" >
+                        <li class="dropdown-header">ProfileSettings</li>
+                        <input class="btn btn-primary"onclick="alert('Your Profile will be shown only to your contacts')" type="button" value="MyContacts">
+                        <input class="btn btn-primary"onclick="alert('Your profile will not be shown to anybody else')" type="button" value="NoBody">
+                        <input class="btn btn-primary" onclick="alert('your profile will be shown to everyone')"type="button" value="EveryOne">
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              <div class="card"><!--2nd card-->
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            About
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <ul class="dropdownstyles">
+                      <li class="dropdown-header">AboutSettings</li>
+                       <input class="btn btn-primary" onclick="alert('Your Aboutmessage will be shown only to your Contacts')"type="button" value="MyContacts">
+                       <input class="btn btn-primary" onclick="alert('your Aboutmessage will not be shown to anybody else')"type="button" value="NoBody">
+                       <input class="btn btn-primary" onclick="alert('your Aboutmessage will be shown to everyone')"type="button" value="EveryOne">
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card"><!--3rd card-->
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              LastSeen
+                    </button>
+                  </h5>
+              </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                <ul class="dropdownstyles">
+                  <li class="dropdown-header">Lastseen Settings</li>
+                  <input class="btn btn-primary" onclick="alert('Your LastSeen will be shown only to your Contacts')"type="button" value="MyContacts">
+                  <input class="btn btn-primary" onclick="alert('your LastSeen will not be shown to anybody else')"type="button" value="NoBody">
+                  <input class="btn btn-primary" onclick="alert('your LastSeen will be shown to everyone')"type="button" value="EveryOne">
+                </ul><hr></hr>
+                <div <p id="p-popup">If you don't share your Last seen,you won't be able to see other people's Last Seen</p>
+                </div>
+              </div>
+            </div>
+              <p>MessagingInfo</p>
+              <script>
+              $(document).ready(function()
+              {
+                $('[data-toggle="popover"]').popover();
+              });
+              </script><ul>
+                <li><a id="a-blocked"href="#" title="Blocked Contacts" data-toggle="popover" data-trigger="focus" data-content="Currently you have 2 blocked contacts">Blocked Contacts</a>
+                </li></ul>
+                <div><p id="p-popup">You can view the blocked contacts here</p></div>
+              </div>
+            </div>
+          </div><!--header class gets overed-->
+          <!--container fluid gets overed-->  </div>
+      </div><!--first column gets overed-->
+    <!--second split of the page-->
+      <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12 col-xs-12 background widthsnd">
+
+        <div class="header vertical-line" id="myHeader">
+            <nav class="navbar navbar-expand-sm  bg navbar-fixed-top nav-background navbar-dark">
+
+        <!--  <nav class="navbar navbar-expand-sm  bg navbar-dark"><-->
+      <!--logo -->
+              <a class="navbar-brand" href="#"></a>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                 <a class="nav-link "href="#"><i class="fa fa-arrow-left" style="font-size:15px ;padding-left:0px"></i></a> </li>
+                 <li><a><h5>Blocked Contacts</h5></a>
+
+                </li>
+              </ul></nav>
+
+    <!--header div got end here-->
+          <div class="imagedivstyles">
+            <p><img id="blockimage" src="suba.png" alt="logo"></p>
+            <p id="imageno">9897897344
+            <input class="btn btn-primary unblockalign"onclick="alert('Do you want to unblock')" type="button" value="UnBlock"></p>
+            </div><hr></hr>
+          <div class="imagedivstyles">
+            <p><img id="blockimage" src="img.jpg" alt="logo">
+            <p id="imageno">9878686545
+            <input class="btn btn-primary unblockalign"onclick="alert('Do you want to unblock')" type="button" value="UnBlock"></p>
+        </p>
+          </div>
+        <hr></hr>
+        </div>
+      </div>
+<!--nav bar got end here-->
+   <!--end of the row-->
+    </div>
+  </div>
+</body>
+</html>
